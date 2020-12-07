@@ -1,0 +1,169 @@
+/*=============================================
+=                  General                    =
+=============================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+
+.navbar {
+    box-shadow: 0 3px 18px rgba(0, 0, 0, .11);
+}
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+#header {
+    background-image: url('https://i.picsum.photos/id/1040/4496/3000.jpg?hmac=kvZONlBpTcZ16PuE_g2RWxlicQ5JKVq2lqqZndfafBY');
+    background-size: 100% 80%;
+    background-attachment: fixed;
+    padding: 150px 0;
+    border-radius: 0;
+    position: relative;
+}
+
+
+#header:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+#header>.container {
+    position: relative;
+    z-index: 5;
+}
+
+/*=============================================
+=                  Intro                      =
+=============================================*/
+
+/*=============================================
+=                  Features                   =
+=============================================*/
+
+/*=============================================
+=                  Reviews                    =
+=============================================*/
+
+/*=============================================
+=                  Gallery                    =
+=============================================*/
+
+/* TODO: 設定Hover特效 */
+[id^='galleryImage'] {
+    background-size: cover;
+    height: 250px;
+    filter: grayscale(100%);
+}
+
+[id^='galleryImage']>.galleryText {
+    color: white;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    font-size: 6px;
+    opacity: 0;
+    text-align: center;
+    line-height: 250px;
+}
+
+[id^='galleryImage']:hover {
+    filter: grayscale(0%);
+}
+
+[id^='galleryImage']:hover>.galleryText {
+    font-size: 22px;
+    opacity: 1;
+}
+
+[id^='galleryImage'],
+.galleryText {
+    transition: all .5s ease-in-out;
+}
+
+
+/* 放入背景圖片 */
+
+#galleryImage1 {
+    background-image: url('https://i.picsum.photos/id/1049/3900/3120.jpg?hmac=Ox2snaSyRuEofh721sagxPbwVzLtung57FNHefB8Kdw');
+}
+
+#galleryImage2 {
+    background-image: url('https://i.picsum.photos/id/1055/5472/3648.jpg?hmac=1c293cGVlNouNQsjxT8y3nsYO-7qLCaOBEGvih0ibEU');
+}
+
+#galleryImage3 {
+    background-image: url('https://i.picsum.photos/id/1068/7117/4090.jpg?hmac=Y6xHXrzHsNlbRTbhzZ53Yk-Ux9lUECBLbbP4wb5a1qY');
+}
+
+#galleryImage4 {
+    background-image: url('https://i.picsum.photos/id/1076/4835/3223.jpg?hmac=sw_W2oBUV1Pp_QwMbkODYHgWlX-SOkVRatS_UErh64Q');
+}
+
+#galleryImage5 {
+    background-image: url('https://i.picsum.photos/id/112/4200/2800.jpg?hmac=8Qhr0ehkFOnlKO__aKhLMQTu2qzcAten9LHpBO6uk-k');
+}
+
+#galleryImage6 {
+    background-image: url('https://i.picsum.photos/id/139/3465/3008.jpg?hmac=52Trc4YpfCnGBPi5fsPPwSkRarjMuUV4O_uLBufPgII');
+}
+
+#galleryImage7 {
+    background-image: url('https://i.picsum.photos/id/249/3000/2000.jpg?hmac=U2oOCXdXUwt6ftKMC4icF6eS8dGDUZJM_0-qi0JEqjk');
+}
+
+#galleryImage8 {
+    background-image: url('https://i.picsum.photos/id/328/3264/2448.jpg?hmac=rR8AM7aOiJkj7PHfKTv_1H0_2Mmi2tYEuXvKR1S0wNU');
+}
+
+/*=============================================
+=                   Footer                    =
+=============================================*/
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-end p {
+    font-size: 8px;
+    margin: 0;
+}
+
+/*=============================================
+=                  Button                    =
+=============================================*/
+#scrollTopBtn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border: none;
+    border-radius: 50%;
+    right: 30px;
+    position: fixed;
+    bottom: 30px;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    justify-content: center;
+    align-items: center;
+}
